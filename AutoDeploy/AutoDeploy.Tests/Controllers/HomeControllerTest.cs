@@ -13,13 +13,13 @@ namespace AutoDeploy.Tests.Controllers
     public class HomeControllerTest
     {
         [TestMethod]
-        public void Login()
+        public void Index()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            LoginController controller = new LoginController();
 
             // Act
-            ViewResult result = controller.Login() as ViewResult;
+            ViewResult result = controller.Index() as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
@@ -29,7 +29,7 @@ namespace AutoDeploy.Tests.Controllers
         public void About()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            LoginController controller = new LoginController();
 
             // Act
             ViewResult result = controller.About() as ViewResult;
@@ -42,7 +42,7 @@ namespace AutoDeploy.Tests.Controllers
         public void Contact()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            LoginController controller = new LoginController();
 
             // Act
             ViewResult result = controller.Contact() as ViewResult;
